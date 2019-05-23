@@ -1,0 +1,33 @@
+// FONTS
+
+$primary-font: 'Nunito',
+sans-serif;
+
+
+// COLORS
+$blue: #63B8BD;
+$dark-grey: #2F3337;
+$dark: #37464B;
+$light-grey: #4B595D;
+$lighter-grey: #E6E6E6;
+
+
+
+
+// BREAKPONTS
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: $primary-font;
+}
+
+
+
+@import 'header';
