@@ -11,7 +11,6 @@ html {
 
 section.header {
   width: 100%;
-  height: 100vh;
   position: relative;
 }
 
@@ -239,5 +238,46 @@ section.header div.home-btn i {
   font-size: 36px;
   color: #fff;
   line-height: .9;
+}
+
+.hero {
+  width: 100%;
+  height: 450px;
+  margin-top: 8vh;
+  position: relative;
+  background-image: url(../img/bg_roof.jpg);
+  background-size: cover;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #2F3337;
+  opacity: 0.7;
+  z-index: 1;
+}
+
+.hero__content {
+  padding: 20px;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  z-index: 5;
+}
+
+.hero__title {
+  font-size: 26px;
+  color: #63B8BD;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.hero__para {
+  font-size: 20px;
+  color: #E6E6E6;
 }
 /*# sourceMappingURL=style.css.map */
