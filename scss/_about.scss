@@ -1,0 +1,43 @@
+.about {
+    &__wrapper {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 20px 10px;
+        text-align: center;
+
+        @media (min-width: $screen-md-min) {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 100px;
+        }
+    }
+
+    &__header {
+        padding: 10px 0;
+        color: $light-grey;
+
+        @media (min-width: $screen-md-min) {
+            padding: 0;
+            flex-basis: 30%;
+        }
+
+        span {
+            color: $blue;
+        }
+
+        @include section-header-responsiveFontSize;
+    }
+
+    &__content {
+        padding: 5px 0;
+        color: $light-grey;
+        text-align: justify;
+
+        @include para-responsiveFontSize;
+
+        @media (min-width: $screen-md-min) {
+            flex-basis: 60%;
+        }
+    }
+}

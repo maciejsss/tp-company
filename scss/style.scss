@@ -73,6 +73,34 @@ $screen-xl-min: 1200px;
     }
 }
 
+@mixin para-responsiveFontSize {
+    font-size: $small;
+
+    @media (min-width: $screen-md-min) {
+        font-size: $small;
+    }
+
+    @media (min-width: $screen-lg-min) {
+        font-size: $medium;
+    }
+}
+
+@mixin section-header-responsiveFontSize {
+    font-size: $mobile-big;
+
+    @media (min-width: $screen-md-min) {
+        font-size: $desktop-big;
+    }
+
+    @media (min-width: $screen-lg-min) {
+        font-size: $desktop-bigger;
+    }
+
+    @media (min-width: $screen-xl-min) {
+        font-size: $desktop-bigger;
+    }
+}
+
 
 
 * {
@@ -89,3 +117,4 @@ html {
 
 @import 'header';
 @import 'slider';
+@import 'about';
