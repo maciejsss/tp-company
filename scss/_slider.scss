@@ -28,6 +28,13 @@
         left: 0;
         z-index: 5;
 
+        @media (min-width: $screen-md-min) {
+            margin-left: 50px;
+        }
+
+        @media (min-width: $screen-xl-min) {
+            margin-left: 250px;
+        }
     }
 
     &__title {
@@ -35,10 +42,36 @@
         color: $blue;
         padding-bottom: 10px;
         text-transform: uppercase;
+
+        @media (min-width: $screen-md-min) {
+            font-size: $desktop-medium;
+        }
+
+        @media (min-width: $screen-lg-min) {
+            font-size: $desktop-big;
+        }
+
+        @media (min-width: $screen-xl-min) {
+            font-size: $desktop-bigger;
+        }
+
     }
 
     &__para {
         font-size: $medium;
         color: $lighter-grey;
+
+
+        @media (min-width: $screen-md-min) {
+            font-size: $medium;
+        }
+
+        @media (min-width: $screen-lg-min) {
+            font-size: $desktop-medium;
+        }
+
+        @media (min-width: $screen-xl-min) {
+            font-size: $desktop-big;
+        }
     }
 }

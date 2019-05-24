@@ -269,6 +269,18 @@ section.header div.home-btn i {
   z-index: 5;
 }
 
+@media (min-width: 768px) {
+  .hero__content {
+    margin-left: 50px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero__content {
+    margin-left: 250px;
+  }
+}
+
 .hero__title {
   font-size: 26px;
   color: #63B8BD;
@@ -276,8 +288,44 @@ section.header div.home-btn i {
   text-transform: uppercase;
 }
 
+@media (min-width: 768px) {
+  .hero__title {
+    font-size: 27px;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero__title {
+    font-size: 37px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero__title {
+    font-size: 47px;
+  }
+}
+
 .hero__para {
   font-size: 20px;
   color: #E6E6E6;
+}
+
+@media (min-width: 768px) {
+  .hero__para {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero__para {
+    font-size: 27px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero__para {
+    font-size: 37px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
