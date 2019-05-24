@@ -38,40 +38,14 @@
     }
 
     &__title {
-        font-size: $mobile-big;
         color: $blue;
         padding-bottom: 10px;
         text-transform: uppercase;
-
-        @media (min-width: $screen-md-min) {
-            font-size: $desktop-medium;
-        }
-
-        @media (min-width: $screen-lg-min) {
-            font-size: $desktop-big;
-        }
-
-        @media (min-width: $screen-xl-min) {
-            font-size: $desktop-bigger;
-        }
-
+        @include title-responsiveFontSize;
     }
 
     &__para {
-        font-size: $medium;
         color: $lighter-grey;
-
-
-        @media (min-width: $screen-md-min) {
-            font-size: $medium;
-        }
-
-        @media (min-width: $screen-lg-min) {
-            font-size: $desktop-medium;
-        }
-
-        @media (min-width: $screen-xl-min) {
-            font-size: $desktop-big;
-        }
+        @include subtitle-reponsiveFontSize;
     }
 }
