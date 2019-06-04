@@ -9,6 +9,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+            padding: 100px 50px;
         }
     }
 
@@ -37,6 +38,13 @@
 
         @media (min-width: $screen-md-min) {
             flex-basis: 60%;
+
+
+        }
+
+        i {
+            font-size: 20px;
+            padding: 0 10px;
         }
     }
 }

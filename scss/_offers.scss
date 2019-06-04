@@ -1,7 +1,15 @@
 .offers {
+    background-color: $blue;
+
     &__wrapper {
         @include wrapper;
-        background-color: $blue;
+
+        @media (min-width: $screen-lg-min) {
+            position: relative;
+            display: flex;
+            justify-content: space-around;
+            padding-top: 100px;
+        }
     }
 
     &__header {
@@ -9,8 +17,12 @@
         color: $dark-grey;
         text-align: center;
 
-        @media (min-width: $screen-md-min) {
+        @media (min-width: $screen-lg-min) {
             padding: 0;
+            position: absolute;
+            top: 4%;
+            left: 50%;
+            transform: translateX(-50%);
         }
 
         span {
@@ -26,10 +38,19 @@
         padding: 10px 20px;
         margin: 15px 0;
 
+        @media (min-width: $screen-lg-min) {
+            flex-basis: 28%;
+            flex-wrap: wrap;
+        }
+
 
         .content {
             &__title {
                 padding: 15px 0;
+
+                @media (min-width: $screen-lg-min) {
+                    font-size: $desktop-medium;
+                }
             }
 
             &__txt {
