@@ -23,6 +23,7 @@ $dark-grey: #2F3337;
 $dark: #37464B;
 $light-grey: #4B595D;
 $lighter-grey: #E6E6E6;
+$white: #fff;
 
 
 
@@ -101,6 +102,27 @@ $screen-xl-min: 1200px;
     }
 }
 
+@mixin wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 10px;
+
+    @media (min-width: $screen-md-min) {
+        padding: 100px 0;
+    }
+}
+
+@mixin section-header {
+    padding: 10px 0;
+    color: $light-grey;
+
+    @media (min-width: $screen-md-min) {
+        padding: 0;
+    }
+
+    @include section-header-responsiveFontSize;
+}
+
 
 
 * {
@@ -118,3 +140,4 @@ html {
 @import 'header';
 @import 'slider';
 @import 'about';
+@import 'offers';

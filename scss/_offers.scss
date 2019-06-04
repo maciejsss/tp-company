@@ -1,0 +1,51 @@
+.offers {
+    &__wrapper {
+        @include wrapper;
+        background-color: $blue;
+    }
+
+    &__header {
+        padding: 10px 0 15px;
+        color: $dark-grey;
+        text-align: center;
+
+        @media (min-width: $screen-md-min) {
+            padding: 0;
+        }
+
+        span {
+            color: $blue;
+        }
+
+        @include section-header-responsiveFontSize;
+    }
+
+    &__content {
+        background-color: $dark;
+        color: $white;
+        padding: 10px 20px;
+        margin: 15px 0;
+
+
+        .content {
+            &__title {
+                padding: 15px 0;
+            }
+
+            &__txt {
+                padding: 5px 0;
+
+                &--blue {
+                    padding: 15px 0;
+                    color: $blue;
+                }
+            }
+
+            &__list {
+                padding-left: 20px;
+            }
+        }
+    }
+
+
+}

@@ -1,15 +1,14 @@
 .about {
     &__wrapper {
-        max-width: 1400px;
-        margin: 0 auto;
-        padding: 20px 10px;
+
+        @include wrapper;
+
         text-align: center;
 
         @media (min-width: $screen-md-min) {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding-top: 100px;
         }
     }
 
