@@ -621,7 +621,7 @@ section.header div.home-btn i {
   0% {
     opacity: 0;
   }
-  25% {
+  15% {
     opacity: 0;
   }
   55% {
@@ -636,7 +636,7 @@ section.header div.home-btn i {
   0% {
     opacity: 0;
   }
-  25% {
+  15% {
     opacity: 0;
   }
   55% {
@@ -651,10 +651,10 @@ section.header div.home-btn i {
   0% {
     opacity: 0;
   }
-  10% {
+  30% {
     opacity: 1;
   }
-  95% {
+  70% {
     opacity: 1;
   }
   100% {
@@ -666,10 +666,10 @@ section.header div.home-btn i {
   0% {
     opacity: 0;
   }
-  10% {
+  30% {
     opacity: 1;
   }
-  95% {
+  70% {
     opacity: 1;
   }
   100% {

@@ -38,3 +38,30 @@ window.addEventListener("scroll", () => {
         homeBtn.style.right = "-30%";
     }
 });
+
+
+// SLIDER
+
+let activeElement = 0;
+let changeTime = 6000;
+
+
+const sliderImg = document.querySelector('.parallax');
+const sliderP = document.querySelector('.parallax__para');
+const awesomeIcon = document.querySelector('h1 i');
+
+const sliderTxt = ["Doświadczony Zespół", "Gwarancja jakości", "Szybka realizacja"];
+const iClasses = ["fas fa-user-tie", "fas fa-home", "fas fa-check"];
+
+function changeSlide() {
+    sliderP.textContent = sliderTxt[activeElement];
+    awesomeIcon.className = iClasses[activeElement];
+    activeElement++;
+
+    if (activeElement === 3) {
+        activeElement = 0;
+    }
+    console.log(activeElement);
+}
+
+setInterval(changeSlide, changeTime);
