@@ -539,13 +539,19 @@ section.header div.home-btn i {
 
 .parallax {
   width: 100%;
-  height: 350px;
+  height: 200px;
   position: relative;
   background-image: url(../img/bg_para_1.jpg);
   background-size: cover;
   background-attachment: fixed;
   -webkit-animation: imgFade 6s infinite both;
           animation: imgFade 6s infinite both;
+}
+
+@media (min-width: 1200px) {
+  .parallax {
+    height: 300px;
+  }
 }
 
 .parallax::after {
