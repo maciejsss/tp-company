@@ -7,6 +7,7 @@
     background-attachment: fixed;
     animation: imgFade 6s infinite both;
 
+
     @media (min-width: $screen-xl-min) {
         height: 300px;
     }
@@ -34,6 +35,7 @@
         opacity: 0;
         z-index: 5;
         animation: textFade 6s infinite both;
+
     }
 
     &__title {
@@ -41,7 +43,7 @@
         padding-bottom: 10px;
         text-transform: uppercase;
         text-align: center;
-        @include title-responsiveFontSize;
+        font-size: 40px;
     }
 
     &__para {
