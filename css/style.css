@@ -425,7 +425,7 @@ section.header div.home-btn i {
 }
 
 .offers {
-  background-color: rgba(99, 184, 189, 0.651);
+  background-color: rgba(99, 184, 189, 0.767);
 }
 
 .offers__wrapper {
@@ -566,7 +566,7 @@ section.header div.home-btn i {
 
 @media (min-width: 1200px) {
   .parallax {
-    height: 300px;
+    height: 250px;
   }
 }
 
@@ -600,7 +600,7 @@ section.header div.home-btn i {
   padding-bottom: 10px;
   text-transform: uppercase;
   text-align: center;
-  font-size: 40px;
+  font-size: 60px;
 }
 
 .parallax__para {
